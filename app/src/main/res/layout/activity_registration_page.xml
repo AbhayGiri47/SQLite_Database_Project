@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    tools:context=".RegistrationPage">
+
+
+    <TextView
+        android:id="@+id/tvregistrationform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text=" Registration Form"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint=" Enter Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvregistrationform"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvregistrationform"
+        app:layout_constraintTop_toBottomOf="@+id/tvregistrationform" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/RegistrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:ems="10"
+        android:hint=" Enter Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etDesignation"
+        style="@style/RegistrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_designation"
+        android:ems="10"
+        android:hint=" Enter Designation"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etSalary"
+        style="@style/RegistrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_salary"
+        android:ems="10"
+        android:hint=" Enter Salary"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etDesignation"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etDesignation"
+        app:layout_constraintTop_toBottomOf="@+id/etDesignation" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        style="@style/RegistrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_address"
+        android:ems="10"
+        android:hint=" Enter Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="@+id/etSalary"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etSalary"
+        app:layout_constraintTop_toBottomOf="@+id/etSalary" />
+
+    <EditText
+        android:id="@+id/etState"
+
+        style="@style/RegistrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/ic_apartment_24"
+        android:ems="10"
+        android:hint=" Enter State"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etAddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etAddress"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+    <EditText
+        android:id="@+id/etCountry"
+        style="@style/RegistrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_apartment_24"
+        android:ems="10"
+        android:hint=" Enter Country"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etState"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etState"
+        app:layout_constraintTop_toBottomOf="@+id/etState" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/RegistrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:ems="10"
+        android:hint=" Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etCountry"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etCountry"
+        app:layout_constraintTop_toBottomOf="@+id/etCountry" />
+
+    <EditText
+        android:id="@+id/etrePassword"
+        style="@style/RegistrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_password"
+
+        android:ems="10"
+        android:hint=" Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/LoginEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/etrePassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etrePassword"
+        app:layout_constraintTop_toBottomOf="@+id/etrePassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

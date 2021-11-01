@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SQLite_Database_Project</string>
+    <string name="see_another_person_profile">See Another person Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="registration_form">Registration Form</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="logout">Logout</string>
+</resources>
